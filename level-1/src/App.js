@@ -193,7 +193,7 @@ function App() {
       {/*Conditionally rendering a components based on user search  */}
       {!dataLoading && !showResultScreen && <DefaultScreen clickHandler = {clickHandler} currentWeatherData = {hourlyForecastData?.length ? hourlyForecastData.filter((hour)=>hour.isClosestTime) : []} forecastLocation = {forecastLocation}/> }
       {showResultScreen && !dataLoading && <SearchResult currentWeatherData = {hourlyForecastData?.length ? hourlyForecastData.filter((hour)=>hour.isClosestTime) : []} forecastLocation = {forecastLocation} dailyForecast={dailyForecast}/>}
-      <p className="copyright-text">&copy; 2024 WSA. All Rights Reserved.</p>
+      <p className="copyright-text">&copy; 2024 Nikhil Tamboli. All Rights Reserved.</p>
     </div>
   );
 }
